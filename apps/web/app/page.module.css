@@ -1,0 +1,170 @@
+.mainContainer {
+  display: grid;
+}
+
+.login {
+  display: grid;
+}
+
+.chatContainer {
+  display: grid;
+  border: 1px solid #c4c4c4;
+  min-height: 95vh;
+  width: 70vw;
+  margin: auto;
+  overflow-y: hidden;
+  margin-top: 20px;
+  grid-template-columns: 150px auto;
+}
+
+.users {
+  height: 95vh;
+  overflow-y: auto;
+}
+
+.user {
+  padding: 15px;
+  border-bottom: 1px solid green;
+}
+
+.user:hover {
+  background-color: #4e4747;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.user.active {
+  background-color: rgb(93, 88, 88);
+  color: #eae8e8;
+}
+
+.messageContainer {
+  display: grid;
+  border: 1px solid #c4c4c4;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:5px;
+}
+
+.chatBody {
+  height: 85vh;
+  overflow-y: auto;
+  color: black;
+}
+
+.messageBox {
+  align-self: end;
+  width: 90%;
+}
+
+.message {
+  background: rgb(225, 235, 225);
+  color: rgb(77, 73, 73);
+  padding: 7px;
+  margin: 5px;
+  font-size: 18px;
+  max-width: 50%;
+  display: table;
+  clear: both;
+  border: 1px solid #ababab;
+}
+
+.messageLeft {
+  float: left;
+  background-color: #dcdcdc;
+  color: #252121;
+  border-radius: 3px;
+}
+
+.messageRight {
+  float: right;
+  border-radius: 3px;
+}
+
+.messageUsername {
+  font-weight: bold;
+  color: #494949;
+  font-size: medium;
+}
+
+.messageInput {
+  width: 95%;
+  height: 55px;
+  padding: 4px;
+  font-size: 19px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.userLoginInput {
+  width: 400px;
+  height: 50px;
+  padding: 4px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 50vh;
+  padding-left: 20px;
+}
+.btn {
+  height: 53px;
+  width: 10%;
+  border-radius: 3px;
+  margin-top: 35px;
+  margin-right: 5px;
+}
+.footer {
+  font-family: var(--font-geist-sans);
+  grid-row: 3;
+  display: flex;
+  gap: 24px;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer img {
+  flex-shrink: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+
+  a.secondary:hover {
+    background: var(--button-secondary-hover);
+    border-color: transparent;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px;
+    padding-bottom: 80px;
+  }
+
+  .main {
+    align-items: center;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
